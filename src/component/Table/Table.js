@@ -14,7 +14,7 @@ let val=Array.apply(null,{length:26}).map(Number.call,Number).splice(1,25);
         return Array;
     }
     shuffle(val);
-
+const bingo=[];
 const Table=()=>{
 
     const [am,setAM]=useState(false);
@@ -67,7 +67,6 @@ const Table=()=>{
     const [o,setO]=useState(0);
     const [p,setP]=useState(0);
     const [q,setQ]=useState(0);
-    const [bingo,setBingo]=useState(0);
 
 const click1=()=>{
     setX(x+1)
@@ -267,21 +266,70 @@ const click25=()=>{
     setX(x+1)
     setEQ(25)
 }
+
 useEffect(()=>{
-        if((am===1&&an===2&&ao===3&&ap===4&&aq===5)||(am===1&&bm===6&&cm===11&&dm===16&&em===21)){
-        setBingo(bingo+1)
-        console.log(bingo);
+        if(m===5&&m1===5)
+        {
+            setM(0);
+            setM1(0);
+            bingo.push(1)
+        }else if(n===5&&n1===5){
+            setN(0);
+            setN1(0);
+            bingo.push(1);
+        }
+        else if(o===5&&o1===5){
+            setO(0);
+            setO1(0);
+            bingo.push(1)
+        }else if(p===5&&p1===5){
+            setP(0);
+            setP1(0);
+            bingo.push(1)
+        }else if(q===5&&q1===5){
+            setQ(0);
+            setQ1(0);
+            bingo.push(1)
+        }else if(x===5&&y1===5){
+            setX(0);
+            setY1(0);
+            bingo.push(1)
+        }else if(y===5&&x1===5){
+            setY(0);
+            setX1(0);
+            bingo.push(1)
+        }else if(a===5&&a1===5){
+            setA(0);
+            setA1(0);
+            bingo.push(1)
+        }else if(b===5&&b1===5){
+            setB(0);
+            setB1(0);
+            bingo.push(1)
+        }else if(c===5&&c1===5){
+            setC(0);
+            setC1(0);
+            bingo.push(1)
+        }
+        else if(d===5&&d1===5){
+            setD(0);
+            setD1(0);
+            bingo.push(1)
+        }else if(e===5&&e1===5){
+            setE(0);
+            setE1(0);
+            bingo.push(1)
         }
     },[am,an,ao,ap,aq,bm,bn,bo,bp,bq,cm,cn,co,cp,cq,dm,dn,dO,dp,dq,em,en,eo,ep,eq])
   return (
     <div className="container">
         <Header/>
         <ul>
-            <li className={(bingo===1)?"bingYes":"bingoNo"}><p>B</p></li>
-            <li className={(bingo===2)?"bingYes":"bingoNo"}><p>I</p></li>
-            <li className={(bingo===3)?"bingYes":"bingoNo"}><p>N</p></li>
-            <li className={(bingo===4)?"bingYes":"bingoNo"}><p>G</p></li>
-            <li className={(bingo===5)?"bingYes":"bingoNo"}><p>O</p></li>
+            <li className={(bingo[0])?"bingYes":"bingoNo"}><p>B</p></li>
+            <li className={(bingo[1])?"bingYes":"bingoNo"}><p>I</p></li>
+            <li className={(bingo[2])?"bingYes":"bingoNo"}><p>N</p></li>
+            <li className={(bingo[3])?"bingYes":"bingoNo"}><p>G</p></li>
+            <li className={(bingo[4])?"bingYes":"bingoNo"}><p>O</p></li>
         </ul>
     <div className='table-cont' >
       <table>
