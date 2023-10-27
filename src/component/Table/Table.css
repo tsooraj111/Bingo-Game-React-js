@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.table-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 395px;
+    width: 100%;
+    background: rgb(255, 0, 179); 
+}
+.table-cont table td{
+    width: 50px;
+    height: 50px;
+}
+.table-cont table td button{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+.table-cont table td .clk1{
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+}
+.table-cont table td .clk2{
+    background-color: rgb(127, 128, 127);
+    text-decoration: line-through;
+}
+ul{
+    list-style-type: none;
+    background: radial-gradient(aqua,blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: 5px rgb(0, 98, 255);
+    border-style:groove;
+    border-radius: 5px;
+}
+ul li p{
+    font-size: larger;
+    font-weight: bolder;
+}
+ul .bingNo{
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+ul .bingYes{
+    display: inline-block;
+    background-color: rgb(30, 255, 0);
+    border: 5px groove yellow;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}

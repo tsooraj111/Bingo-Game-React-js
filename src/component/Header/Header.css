@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(yellow,orange);
+    border: 5px rgb(255, 200, 0);
+    border-style:outset;
+}
+.image{
+    height: 100px;
+}
+.image img{
+    width: 260px;
+    height: 110px;
+}
