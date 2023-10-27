@@ -282,7 +282,7 @@ console.log(cm);
 console.log(dm);
 console.log(em);
   return (
-    <div className=".container">
+    <div className="container">
         <ul>
             <li className={(bingo===1)?"bingYes":"bingoNo"}><p>B</p></li>
             <li className={(bingo===2)?"bingYes":"bingoNo"}><p>I</p></li>

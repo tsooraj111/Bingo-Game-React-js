@@ -6,16 +6,15 @@
 background-color: blue;
 }
 .App{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     background-color: violet;
     height: 100vh;
 }
 .App #new{
     background-color: yellow;
-    padding: 50px 100px;
+    /* padding: 50px 100px; */
     border: none;
+    height: 200px;
+    width: 400px;
     position: relative;
     left: 50%;
     top:50%;
