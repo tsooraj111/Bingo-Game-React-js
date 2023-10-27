@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
-import "./Table.css"
+import "./Table.css";
+import Header from "../Header/Header";
 
-// var [val,setVal]=useState(Array.apply(null,{length:26}).map(Number.call,Number).splice(1,25));
 let val=Array.apply(null,{length:26}).map(Number.call,Number).splice(1,25);
 
     const shuffle=(val)=>{
@@ -14,7 +14,6 @@ let val=Array.apply(null,{length:26}).map(Number.call,Number).splice(1,25);
         return Array;
     }
     shuffle(val);
-
 
 const Table=()=>{
 
@@ -70,14 +69,14 @@ const Table=()=>{
     const [q,setQ]=useState(0);
     const [bingo,setBingo]=useState(0);
 
-    const click1=()=>{
-        setX(x+1)
-        setA(a+1)
-        setA1(a1+1)
-        setM(m+1)
-        setM1(m1+1)
-        setY1(y1+1)
-        setAM(1)      
+const click1=()=>{
+    setX(x+1)
+    setA(a+1)
+    setA1(a1+1)
+    setM(m+1)
+    setM1(m1+1)
+    setY1(y1+1)
+    setAM(1)      
 }
 const click2=()=>{
     setA(a+1)
@@ -268,21 +267,15 @@ const click25=()=>{
     setX(x+1)
     setEQ(25)
 }
-const arr=[1,2,3,4,5]
-[a,b,c,d,e]=[am,an,ao,ap,aq];
 useEffect(()=>{
-        if((am===1&&an==2&&ao===3&&ap===4&&aq===5)||(am===1&&bm===6&&cm===11&&dm===16&&em===21)){
+        if((am===1&&an===2&&ao===3&&ap===4&&aq===5)||(am===1&&bm===6&&cm===11&&dm===16&&em===21)){
         setBingo(bingo+1)
         console.log(bingo);
         }
     },[am,an,ao,ap,aq,bm,bn,bo,bp,bq,cm,cn,co,cp,cq,dm,dn,dO,dp,dq,em,en,eo,ep,eq])
-console.log(am);
-console.log(bm);
-console.log(cm);
-console.log(dm);
-console.log(em);
   return (
     <div className="container">
+        <Header/>
         <ul>
             <li className={(bingo===1)?"bingYes":"bingoNo"}><p>B</p></li>
             <li className={(bingo===2)?"bingYes":"bingoNo"}><p>I</p></li>

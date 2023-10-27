@@ -5,16 +5,16 @@
 .open1{
 background-color: blue;
 }
-.App{
+.parent{
     background-color: violet;
     height: 100vh;
+    width: 100%;
 }
-.App #new{
+.parent #new{
     background-color: yellow;
-    /* padding: 50px 100px; */
     border: none;
-    height: 200px;
-    width: 400px;
+    height: 180px;
+    width: 350px;
     position: relative;
     left: 50%;
     top:50%;
@@ -22,4 +22,10 @@ background-color: blue;
     border-radius: 100px;
     font-family: agbalumo;
     font-size: 3rem;
+}
+@media screen and (max-width: 322px) {
+    .parent #new{
+        height: 150px;
+        width: 300px;
+    }
 }

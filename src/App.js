@@ -1,5 +1,4 @@
 import './App.css';
-import Header from "./component/Header/Header";
 import Table from "./component/Table/Table";
 import { useState } from 'react';
 
@@ -10,10 +9,11 @@ const App = ()=> {
   }
   return (
     <div className="App">
+      <div className='parent'>
       <button onClick={onHandle} className={(open===true)?"open1":"open2"} id='new'>New Game</button>
       <div className={(open===false)?"open1":"open2"}>
-        <Header/>
         <Table/>
+      </div>
       </div>
     </div>
   );
