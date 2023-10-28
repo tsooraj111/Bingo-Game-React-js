@@ -1,19 +1,22 @@
 .open1{
     display: none;
 }
-.open2{
+/* .open2{
 background-color: blue;
-}
+} */
 .parent{
     background-color: violet;
     height: 100vh;
     width: 100%;
 }
-.parent img{
+.parent .logo-in{
     width: 200px;
     height: 200px;
     display: block;
     margin: auto;
+}
+.parent .logo-out{
+    display: none;
 }
 .parent #new{
     background-color: yellow;

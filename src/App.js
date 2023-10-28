@@ -11,7 +11,7 @@ const App = ()=> {
   return (
     <div className="App">
       <div className='parent'>
-      <img src={img2} alt="photo" />
+      <img src={img2} alt="photo" className={(open===true)?"logo-out":"logo-in"}/>
       <button onClick={onHandle} className={(open===true)?"open1":"open2"} id='new'>New Game</button>
       <div className={(open===false)?"open1":"open2"}>
         <Table/>
