@@ -1,6 +1,8 @@
 import React,{useState,useEffect} from "react";
 import "./Table.css";
 import Header from "../Header/Header";
+import Over from "../over/Over";
+
 
 let val=Array.apply(null,{length:26}).map(Number.call,Number).splice(1,25);
 
@@ -320,7 +322,13 @@ useEffect(()=>{
             setE1(0);
             bingo.push(1)
         }
-    },[am,an,ao,ap,aq,bm,bn,bo,bp,bq,cm,cn,co,cp,cq,dm,dn,dO,dp,dq,em,en,eo,ep,eq])
+        if (bingo.length===5) {
+            
+        }
+},[am,an,ao,ap,aq,bm,bn,bo,bp,bq,cm,cn,co,cp,cq,dm,dn,dO,dp,dq,em,en,eo,ep,eq])
+// if (bingo.length===5) {
+            
+// }
   return (
     <div className="container">
         <Header/>
@@ -331,7 +339,15 @@ useEffect(()=>{
             <li className={(bingo[3])?"bingYes":"bingoNo"}><p>G</p></li>
             <li className={(bingo[4])?"bingYes":"bingoNo"}><p>O</p></li>
         </ul>
-    <div className='table-cont' >
+        {/* <div className='game-over'>
+            <img src={win} alt="" />
+            <button>OK</button>
+        </div> */}
+        <div className={(bingo.length===5)?".test":"test"}>
+            <Over/>
+        </div>
+        
+    <div className='table-cont' > 
       <table>
         <tbody>
         {/* <tr>

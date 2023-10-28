@@ -11,9 +11,9 @@
 }
 .table-cont{
     display: flex;
+
     justify-content: center;
-    padding-top: 100px;
-    
+    padding-top: 100px; 
 }
 .table-cont table td{
     width: 50px;
@@ -72,4 +72,7 @@ ul .bingYes{
     display: flex;
     justify-content:center;
     align-items: center;
+}
+.test{
+    display: none;
 }

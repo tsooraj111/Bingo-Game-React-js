@@ -1,0 +1,55 @@
+.game-over{
+    width: 50%;
+    height: 300px; 
+    background: radial-gradient(#00ddff,blue);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    /* z-index: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 500px 100px black;
+    animation: win 1s 1;
+}
+@keyframes win {
+    0%{
+        opacity: 0;
+        transform:translate(-50%,50%);
+
+    }
+    100%{
+        opacity: 10;
+        transform:translate(-50%,50%);
+    }
+}
+.game-over img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.game-over button{
+    width: 80px;
+    height: 40px;
+    background-color: #eeff00;
+    border-radius: 30px;
+    font-family: system-ui, -apple-system;
+    font-weight: 700;
+    border: none;
+}
+.game-over button:hover{
+    background-color: deeppink;
+}
+@media (max-width: 322px) {
+    .game-over img{
+        width: 100px;
+        height: 150px;
+        margin: 10px;
+    }
+    .game-over{
+        width: 300px;
+    }
+}
