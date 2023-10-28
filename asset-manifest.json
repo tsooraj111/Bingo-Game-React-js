@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Bingo-Game-React-js/static/css/main.7306b84c.css",
-    "main.js": "/Bingo-Game-React-js/static/js/main.0525473c.js",
+    "main.css": "/Bingo-Game-React-js/static/css/main.b1f31e06.css",
+    "main.js": "/Bingo-Game-React-js/static/js/main.85a2511c.js",
     "static/js/787.85194145.chunk.js": "/Bingo-Game-React-js/static/js/787.85194145.chunk.js",
     "static/media/img2.png": "/Bingo-Game-React-js/static/media/img2.982f2416874032aa0213.png",
     "static/media/you-win.png": "/Bingo-Game-React-js/static/media/you-win.624dcb1aa0d296a5e0d2.png",
     "index.html": "/Bingo-Game-React-js/index.html",
-    "main.7306b84c.css.map": "/Bingo-Game-React-js/static/css/main.7306b84c.css.map",
-    "main.0525473c.js.map": "/Bingo-Game-React-js/static/js/main.0525473c.js.map",
+    "main.b1f31e06.css.map": "/Bingo-Game-React-js/static/css/main.b1f31e06.css.map",
+    "main.85a2511c.js.map": "/Bingo-Game-React-js/static/js/main.85a2511c.js.map",
     "787.85194145.chunk.js.map": "/Bingo-Game-React-js/static/js/787.85194145.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7306b84c.css",
-    "static/js/main.0525473c.js"
+    "static/css/main.b1f31e06.css",
+    "static/js/main.85a2511c.js"
   ]
 }
